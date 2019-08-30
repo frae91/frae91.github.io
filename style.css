@@ -139,3 +139,10 @@ color: #602626;
 .dark {
   background-color: #3a1010 !important;
 }
+
+.gallery-block {
+  height: 400px !important;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
