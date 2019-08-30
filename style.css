@@ -141,8 +141,5 @@ color: #602626;
 }
 
 .gallery-block {
-  height: 400px !important;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  max-height: 400px !important;
 }
