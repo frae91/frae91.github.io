@@ -1,0 +1,73 @@
+#banner {
+  background-image: url('banner.png');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+#banner-title {
+  font-family: 'Arial Black';
+}
+
+.text-primary {
+  color: #1d3444 !important;
+}
+
+.text-secondary {
+  color: #f7fabe !important;
+}
+
+.btn-primary {
+  background-color: #1d3444 !important;
+  border-color: #1d3444 !important;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #172a37 !important;
+  border-color: #172a37 !important;
+}
+
+.btn-outline-primary {
+  color: #1d3444 !important;
+  border-color: #1d3444 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: #172a37 !important;
+  border-color: #172a37 !important;
+}
+
+.btn-outline-secondary {
+  color: #f7fabe !important;
+  border-color: #f7fabe !important;
+}
+
+.btn-outline-secondary:hover {
+  color: #1d3444 !important;
+  background-color: #f7fabe !important;
+  border-color: #f7fabe !important;
+}
+
+.bg-primary {
+  background-color: #1d3444 !important;
+  color: #fff !important;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 3px #000;
+}
+
+nav {
+  background: transparent;
+}
+
+.navbar-dark .nav-link {
+  color: #fff !important;
+  text-shadow: 1px 1px 3px #000 !important;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #a1a1a1 !important;
+}
