@@ -1,145 +1,176 @@
-html {
-  scroll-behavior: smooth;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
-  background-color: rgba(0,0,0,0.05);
+    font-family: 'Libre Franklin';
 }
 
-#navbar {
-  background-color: #3a1010 !important;
+#main {
+    max-height: 100vh;
+    
 }
 
-#intro {
-  background-color: #3a1010;
-  height: 50px;
-  padding-bottom: 120px;
-  /* background: url('Intro.jpg') no-repeat bottom center fixed;
-  background-size: cover; */
+.bg-black {
+    background-color: #040707;
 }
 
-#title {
-  background-color: #602626;
-  padding-bottom: 40px;
+
+.text-separator {
+    color: gray;
 }
 
-.primary-text {
-  color: #602626;
+.avatar {
+    width: 200px;
+    height: 200px;
 }
 
-.profile-image {
-  position: relative;
-  width: 160px;
-  height: 160px;
-  top: -80px;
-  border-radius: 50%;
-  border: 5px solid white;
-  /* margin-left: -80px; */
-  /* left: 50%; */
-}
-
-.name {
-  font-size: 48px;
-  margin-bottom: 15px;
-  letter-spacing: 0.5px;
-  position: relative;
-  top: -40px;
-}
-
-.sub-title {
-  font-size: 26px;
-  font-weight: 100;
-  font-style: italic;
-  color: rgba(255,255,255,0.75);
-  position: relative;
-  top: -30px;
-}
-
-.description {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.contact-info {
-  background-color: #8d4343;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 16px;
-}
-
-.section-intro {
-  max-width: 720px;
-}
-
-.skills-icon {
-  background: #602626;
-  color: rgba(255,255,255,0.9);
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  position: relative;
-  top: -40px;
-}
-
-button a {
-  text-decoration: none !important;
-  color: inherit;
-}
-button a:hover {
-  text-decoration: none !important;
-  color: inherit;
-}
-
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #8d4343;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
+.avatar img {
+    width: 100%;
     height: 100%;
-    z-index: 400;
-}
-ul.timeline > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
+    object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #8d4343;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
 }
 
-.company {
-  font-size: 18px;
-  font-weight: 200;
+.nav-links {
+    list-style-type: none;
+    padding: 0;
 }
 
-.location {
-  color: rgba(0,0,0,0.6);
-  font-size: 16px;
-  font-weight: 200;
+.nav-links li {
+    padding: 5px;
 }
 
-a.primary-text:hover {
-color: #602626;
+.nav-line {
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    border-top: solid gray 2px;
+    margin-right: 3px;
+    color: gray;
 }
 
-.dark {
-  background-color: #3a1010 !important;
+
+.skills-line {
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    border-top: solid white 2px;
+    margin-left: 3px;
+    color: white;
 }
 
-.gallery-block {
-  max-height: 400px !important;
+.skills-label h5 {
+    display: inline-block;
+}
+
+.skills-label{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+
+.nav-link-text {
+    color: gray;
+}
+
+.nav-line.active-link + .nav-link-text {
+    color: white;
+}
+
+
+.nav-links li:hover > .nav-line{
+    animation: extend-line 1s forwards;
+}
+
+.active-link {
+    width: 70px;
+}
+
+.experience-details {
+    color: gray;
+}
+
+.experience-details:hover {
+    color: white;
+}
+
+.experience-details > h5 {
+    font-family: 'Libre Franklin';
+    font-weight: 900;
+    text-transform: lowercase;
+}
+
+.nav-line.active-link {
+    border-top: solid white 2px;
+}
+
+@keyframes extend-line {
+    100% {
+        width: 70px;
+    }
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.extra-bold {
+    font-weight: 900;
+    font-size: 6vh;
+}
+
+.semi-bold {
+    font-weight: 700;
+    font-size: 6vh;
+    font-style: italic;
+}
+
+.text-light {
+    font-weight: 200;
+}
+
+#footer .border {
+    border-color: gray !important;
+}
+
+.footer-icon, .contact-link, .contact-handle {
+    color: gray;
+    display: inline-block;
+}
+
+.contact-link:hover ~ .contact-handle {
+    color: white;
+}
+
+a:hover .footer-icon, .contact-link:hover {
+    color: white;
+}
+
+.footer-link, .contact-link {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 576px) {
+    .info h1, .info h2 {
+        font-size: 7vh;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .info h1, .info h2 {
+        font-size: 8vh;
+    }
+
+    .skills-label{
+        justify-content: right;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .info h1, .info h2 {
+        font-size: 10vh;
+    }
+
 }
